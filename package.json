@@ -1,0 +1,54 @@
+{
+  "name": "sanity-plugin-forms",
+  "version": "1.0.0",
+  "description": "Forms plugin for Sanity",
+  "main": "lib/YourPlugin.js",
+  "scripts": {
+    "build": "sanipack build",
+    "watch": "sanipack build --watch",
+    "prepublishOnly": "sanipack build && sanipack verify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/azzlack/sanity-plugin-forms.git"
+  },
+  "keywords": [
+    "sanity",
+    "sanity-plugin"
+  ],
+  "author": "Ove Andersen <ove@eyecatch.no>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "prop-types": "15.7.2"
+  },
+  "devDependencies": {
+    "sanipack": "2.0.1",
+    "prettier": "2.3.1",
+    "eslint": "7.28.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-config-sanity": "5.1.0",
+    "eslint-plugin-react": "7.24.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/azzlack/sanity-plugin-forms/issues"
+  },
+  "homepage": "https://github.com/azzlack/sanity-plugin-forms#readme",
+  "prettier": {
+    "semi": false,
+    "printWidth": 100,
+    "bracketSpacing": false,
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "parser": "sanipack/babel/eslint-parser",
+    "extends": [
+      "sanity",
+      "sanity/react",
+      "prettier",
+      "prettier/react"
+    ]
+  }
+}
