@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+      "esModuleInterop": true,
+      "jsx": "react",
+      "lib": ["dom", "dom.iterable", "ES2019"]
+    },
+    "include": [
+      "./.d.ts",
+      "./node_modules/@sanity/base/types/**/*.ts",
+      "./src/**/*.ts",
+      "./src/**/*.tsx"
+    ]
+}
